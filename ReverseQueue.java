@@ -61,7 +61,7 @@ public class ReverseQueue {
 			nameQueue.add(theName);
 			addNamesToQueue(sc, theName, nameQueue, numberOfNames - 1);
 		}
-	} //end addName
+	} //end addNamesToQueue
 	
 	public static void reverseQueue(String theName, Queue<String> nameQueue) {
 		if(!nameQueue.isEmpty()) {
