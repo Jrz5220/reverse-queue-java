@@ -1,2 +1,4 @@
 # reverse-queue-java
-Reverse the contents of a queue
+Recursion Project:
+- Ask the user to enter names into a queue
+- Reverse the names in the queue using recursion
