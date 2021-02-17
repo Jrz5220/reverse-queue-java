@@ -1,22 +1,21 @@
-package lab4;
 
 import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Scanner;
 
 /*
- * Use recursion to accept a list of names then display them back at the user in reverse.
+ * Use recursion to reverse a list of names entered by the user.
  */
 public class ReverseQueue {
 	
 	public static void main(String args[]) {
 		
-		String name ="";
+		String name = "";
 		int numOfNames = 0;
 		Scanner scan = new Scanner(System.in);
 		Queue<String> names = new LinkedList<>();
 
-		System.out.println("Enter names into a queue.\nHow many names?");
+		System.out.println("Enter names into a list.\nHow many names do you want to enter?");
 		
 		while(true) {
 			numOfNames = getUserNum(scan);
@@ -30,15 +29,17 @@ public class ReverseQueue {
 		
 		System.out.println("The names you entered: ");
 		for(String n : names) {
-			System.out.print(n + " ");
+			System.out.println(n);
 		}
 		
 		reverseQueue(name, names);
 		
-		System.out.println("\nContents of the queue in reverse: ");
+		System.out.println("\nList of names in reverse order: ");
 		for(String n : names) {
-			System.out.print(n + " ");
+			System.out.println(n);
 		}
+		
+		scan.close();
 		
 	} //end main
 	
