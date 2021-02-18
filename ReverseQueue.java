@@ -19,10 +19,9 @@ public class ReverseQueue {
 		
 		while(true) {
 			numOfNames = getUserNum(scan);
-			if(numOfNames <= 0 || numOfNames > 20)
-				System.out.println("Only 1-20 names allowed. Please try again.");
-			else
+			if(numOfNames > 0 && numOfNames <= 20)
 				break;
+			System.out.println("20 names max. Please enter an amount between 1-20.");
 		}
 		
 		addNamesToQueue(scan, name, names, numOfNames);
